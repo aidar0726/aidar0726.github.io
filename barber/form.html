@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Форма записи</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&subset=cyrillic,latin' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="icon" type="image/png" href="img/scissors-icon.svg" />
+</head>
+<body>
+	<!--begin header-->
+	<header class="header header--form">
+		<a class="logotype logotype--form" href="index.html"></a>
+		<div class="header__name-page">Форма<a href="#" class="header__btn"></a></div>
+		
+		<nav class="header__menu">
+			<!--begin content-->
+			<div class="content content--header">
+				<a href="index.html">Главная</a>
+				<a href="photo.html">Наши работы</a>
+				<a href="form.html">Записаться</a>
+				<a href="#">Контакты</a>
+				<a href="https://htmlacademy.ru/">HTML ACADEMY</a>
+				<a href="#" class="header__login-link"><span class="header__enter-link">Вход</span></a> 
+			</div>
+		</nav>
+	</header>
+	<!--end header-->
+	<!--begin form-entry-->
+	<form action="#" method="post" class="form-entry big-triangle" id="mainForm">
+		<div class="content">
+			<div class="form-entry__head">
+				<h1 class="form-entry__title">Запись на стрижку</h1>
+				<a href="index.html" class="form-entry__btn-link button">На главную</a>
+			</div>
+			
+			<!--begin form-entry__client-info-->
+			<fieldset class="form-entry__client-info">
+				<div class="form-entry__user-info-wrap">
+					<div class="form-entry__input-wrap">
+						<input type="text" class="form-entry__surname" name="surname" placeholder="Имя">
+					</div>
+					<div class="form-entry__input-wrap">
+						<input type="text" class="form-entry__name" placeholder="Фамилия" name="name">
+					</div>
+					<div class="form-entry__input-wrap">
+						<input type="text" class="form-entry__patronymic" placeholder="Отчество" name="patronymic">
+					</div>
+				</div>
+
+				<div class="form-entry__contact-wrap">
+					<div class="form-entry__block-wrap">
+						<input type="text" class="form-entry__tel" placeholder="Контактный телефон" name="telefon">
+					</div>
+					
+					<div class="form-entry__block-wrap">
+						<input type="text" class="form-entry__email" placeholder="Контактный e-mail" name="email">
+					</div>
+				</div>
+				
+				<textarea class="form-entry__more-info" name="more-info" placeholder="Доп.информация для мастера"  cols="8"></textarea>
+			</fieldset>
+			<!--end form-entry__client-info-->
+
+			<!--begin form-entry__beard-model-->
+			<fieldset class="form-entry__beard-model">
+				<div class="form-entry__title-beard-wrap legend-line">
+					<legend class="form-entry__title-beard" align="center">Выберите модель бороды:</legend>
+				</div>
+				<ul class="form-entry__beard-list">
+					<li>
+						<input type="radio" name="beard" class="form-entry__radio" value="admiral" id="admiral">
+						<label class="form-entry__admiral" for="admiral">Адмирал
+							<img src="img/bg-admiral.svg" alt="Адмирал">
+						</label>
+					</li>
+					<li>
+						<input type="radio" name="beard" class="form-entry__radio" value="logger" id="logger">
+						<label class="form-entry__polar" for="logger">Лесник
+							<img src="img/bg-logger.svg" alt="Лесник">
+						</label>
+					</li>
+					<li>
+						<input type="radio" name="beard" class="form-entry__radio" value="polar" id="polar">
+						<label for="polar">Полярник
+							<img src="img/bg-polar.svg" alt="Полярник">
+						</label>
+					</li>
+					<li>
+						<input type="radio" name="beard" class="form-entry__radio" value="boyar" id="boyar">
+						<label for="boyar">Боярин
+							<img src="img/bg-boyar.svg" alt="боярин">
+						</label>
+					</li>  
+					<li>
+						<input type="radio" name="beard" class="form-entry__radio" value="sage" id="sage">
+						<label for="sage">Мудрец
+							<img src="img/bg-sage.svg" alt="мудрец">
+						</label>
+					</li>
+				</ul>
+			</fieldset>
+			<!--end form-entry__beard-model-->
+			
+			<!--begin form-entry__services-->
+			<fieldset class="form-entry__services">
+				<div class="form-entry__services-title-wrap legend-line">
+					<legend class="form-entry__services-title" align="center">Дополнительные услуги:</legend>
+				</div>
+				<ul class="form-entry__services-list">
+					<li>
+						<input type="checkbox" class="form-entry__checkbox" name="services-1" value="paint" id="paint">
+						<label for="paint">Подкрасить бороду</label>
+					</li>
+					<li>
+						<input type="checkbox" class="form-entry__checkbox" name="services-2" value="mustache" id="mustache">
+						<label for="mustache">Накрутить усы</label>
+					</li>
+					<li>
+						<input type="checkbox" class="form-entry__checkbox" name="services-3" value="brush" id="brush">
+						<label for="brush">Причесать бороду</label>
+					</li>
+					<li>
+						<input type="checkbox" class="form-entry__checkbox" name="services-3" value="trim" id="trim">
+						<label for="trim">Подровнять виски</label>
+					</li>
+					<li>
+						<input type="checkbox" class="form-entry__checkbox" name="services-5" value="clean" id="clean">
+						<label for="clean">Убрать седину</label>
+					</li>
+					<li>
+						<input type="checkbox" class="form-entry__checkbox" name="services-6" value="polish" id="polish">
+						<label for="polish">Отполировать лысину</label>
+					</li>
+				</ul>
+			</fieldset>
+			<!--end form-entry__services-->
+			<button type="submit" class="form-entry__btn-submit">Отправить заявку</button>
+		</div>
+		<!--end content-->
+	</form>
+	<!--end form-entry-->
+
+	<!--begin footer-->
+	<footer class="footer">
+		<!-- begin content  -->
+		<div class="content content--footer">
+			<section class="footer__contact">
+				<h3 class="footer__contact-title">Барбершоп Бородинский</h3>
+				<div class="footer__adress">г. Санкт-Петербург, ул. Большая Конюшенная 19/8</div>
+				<span class="footer__btn-tel">
+					<i class="footer__contact-tel">Tел.: </i> +7 (812) 555-66-66
+				</span>
+			</section>
+
+			<ul class="footer__social">
+				<li class="footer__social-text">Давайте дружить!</li>
+				<li><a href="#" class="footer__social-vk"></a></li>
+				<li><a href="#" class="footer__social-fb"></a></li>
+				<li><a href="#" class="footer__social-inst"></a></li>
+			</ul>
+
+			<section class="footer__creator">
+				<span>Разработано:</span>
+				<a href="https://htmlacademy.ru/" class="footer__creator-link">HTML ACADEMY</a>
+			</section>
+		</div>
+		<!-- end content -->
+	</footer>
+	<!--end footer-->
+
+	<!--begin popup form registaratchion-->
+	<form action="" class="popup-form">
+		<h1 class="popup-form__title">Личный кабинет</h1>
+		<p>Введите свой логин и пароль, чтобы войти</p>
+
+		<div class="popup-form__input">
+			<input type="text" class="popup-form__login" placeholder="Логин">
+			<input type="text" class="popup-form__pass" placeholder="Пароль">
+			
+			<div class="popup-form__check-wrap">
+				<input type="checkbox" class="popup-form__check" id="popupCheck">
+				<label for="popupCheck">Запомнить меня</label>
+			</div>
+
+			<a href="#" class="popup-form__link">Я забыл пароль!</a>
+		</div>
+
+		<div class="popup-form__wrap-btn">
+			<button type="submit" class="popup-form__btn-submit"></button>
+			<button class="popup-form__btn-close"></button>
+		</div>
+	</form>
+	<article class="popup-luck__wrap">
+		<div class="popup-luck">
+			<h1 class="popup-luck__title">ЭТО УСПЕХ!</h1>
+			<p class="popup-luck__text">
+				Ваша заявка отправлена. 
+				Ожидайте, мы свяжемся с вами как только 
+				будет минутка.
+			</p>
+			
+			<button class="popup-luck__btn-close">ЗАКРЫТЬ ОКНО</button>
+		</div>
+	</article>
+	<!--end popup form registaratchion-->
+	<script src="js/form.min.js"></script>
+</body>
+</html>
