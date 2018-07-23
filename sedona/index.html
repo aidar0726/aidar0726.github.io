@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Главная</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic" rel="stylesheet"> 
+  <script src="http://maps.google.com/maps/api/js?sensor=false"></script>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <ul class="header__menu">
+        <li>
+          <a href="index.html" class="header__menu-link">Главная</a>
+          <button class="header__menu-close"></button>
+        </li>
+        <li><a href="foto.html" class="header__menu-link ">Фото и видео</a></li>
+        <li><a href="form.html" class="header__menu-link">Форма отзыва</a></li>
+        <li><a href="#" class="header__menu-link">HTML ACADEMY</a></li>
+      </ul>
+
+      <div class="header__bottom">
+        <a href="index.html" class="header__logo"></a>
+        <button class="header__menu-open"></button>
+
+        <div class="header__bg-block header__bg-block--home">
+           <img src="img/img_title-site.svg" alt="" class="header__title-site header__title-site--home">
+        </div>
+      </div>
+    </header>
+    <!--begin features--> 
+    <section class="features">
+      <div class="features__head">
+        <div class="features__head-title">
+          Седона — небольшой 
+          городок в АРИЗОНЕ, 
+          зАСЛУЖИвающий большего!
+        </div>
+        <p class="features__head-descrip"> Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</p>
+      </div>
+
+      <div class="features__block">
+        <div class="features__block-top">
+          <div class="features__block-head">
+            <h2 class="features__block-title">НАСТОЯЩИЙ ГОРОДОК</h2>
+            <div class="features__block-num">— №1 —</div>
+            <p class="features__block-text">СЕДОНА НЕ АТРАКЦИОН ДЛЯ ТУРИСТОВ, ТАМ ТЕЧЕТ СВОЯ ЖИЗНЬ</p>
+          </div>
+
+          <div class="features__block-bg features__block-bg--city"></div>
+        </div>
+        <!--end features__block-top--> 
+        <!--begin features__services--> 
+        <ul class="features__services">
+          <li class="features__services-block">
+            <div class="features__services-title">Жилье</div>
+            <p class="features__services-text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+          </li>
+
+          <li class="features__services-block">
+            <div class="features__services-title">Сувениры</div>
+            <p class="features__services-text">Не только китайского, но и местного производства!</p>
+          </li>
+
+          <li class="features__services-block">
+            <div class="features__services-title">Еда</div>
+            <p class="features__services-text">Всегда заказывай фирменный бургер, Вы НЕ разочаруетесь!</p>
+          </li>
+        <!--end features__services--> 
+        </ul>
+      </div>
+
+      <div class="features__block">
+        <div class="features__block-top">
+          <div class="features__block-head">
+            <h2 class="features__block-title"> Там есть Мост дьявола</h2>
+            <div class="features__block-num">— №2 —</div>
+            <p class="features__block-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+          </div>
+
+          <div class="features__block-bg features__block-bg--bridge"></div>
+        </div>
+        <!--end features__block-top-->
+        <div class="features__terrain">
+          <div class="features__terrain-block">
+            <div class="features__terrain-title">НЕБОЛЬШАЯ ПЛОЩАДЬ</div>
+            <div class="features__terrain-num">— №3 —</div>
+            <p class="features__terrain-text">
+              Все достопримеча-<br>тельности находятся очень близко
+            </p>
+          </div>
+
+          <div class="features__terrain-block">
+            <div class="features__terrain-title">Красивая дорога</div>
+            <div class="features__terrain-num">— №4 —</div>
+            <p class="features__terrain-text">
+              Ехать в седону из Лас-Вегаса совсем не скучно!
+            </p>
+          </div>
+
+          <div class="features__terrain-block">
+            <div class="features__terrain-title">Мало туристов</div>
+            <div class="features__terrain-num">— №5 —</div>
+            <p class="features__terrain-text">
+              Большинство едет в гранд каньон и толпится там
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end features--> 
+
+    <!-- begin search-hotel  -->
+    <article class="search-hotel">
+      <div class="search-hotel__title">Заинтересовались?</div>
+      <p class="search-hotel__text">
+        Укажите предполагаемые даты поездки и мы покажем вам лучшие предложения гостиниц в седоне
+      </p>
+      <a href="#" class="search-hotel__btn">Найти гостиницу</a>      
+    </article>
+    <!-- end search-hotel -->
+
+    <!-- begin sedona-map  -->
+    <div class="sedona-map" id="map">
+      
+    </div>
+    <!-- end sedona-map -->
+
+    <!-- begin footer  -->
+    <section class="footer">
+      <a href="#" class="footer__logo">#VISITSEDONA</a>
+       <ul class="footer__social">
+         <li>
+          <a href="#" class="footer__ico"><img src="img/ico-tw.svg" alt="twitter" width="17" height="14"></a>
+        </li>
+         <li>
+          <a href="#" class="footer__ico"><img src="img/ico-fb.svg" alt="facebuck" width="8" height="19"></a>
+        </li>
+         <li>
+          <a href="#" class="footer__ico footer__ico--yt"><img src="img/ico-yt.svg" alt="youToub" width="20" height="14"></a>
+         </li>
+       </ul>
+       <a href="#" class="footer__creator">
+       <span>Разработано</span>
+        <svg version="1" xmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" class="footer__creator-logo"viewBox="0 0 26.943 34.09">
+          <path d="M13.62.017L13.472 0 0 1.412v24.661l13.472 8.017 13.43-7.99.042-.026V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.547-1.212 11.547 1.212v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.013 1.415 5.904 3.513-.86.507-5.031-2.992-.013 1.415 3.827 2.275-.782.523-3.032-1.787-.013 1.413 1.852 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.015 1.044-7.941-4.728-.015 1.416 7.979 4.796.017 1.076-7.972-4.741-.013 1.415 8.021 4.821.045.026 8.143-4.872v-1.268l-.011-.148v-3.761l3.415-2.036v10.02L13.472 31.85 1.925 24.979v-9.852z"/>
+        </svg
+       </a>     
+    </section>
+    <!-- end footer -->
+  </div>
+  <!-- end wrapper -->
+  <script src="js/index.min.js"></script>
+</body>
+</html>
